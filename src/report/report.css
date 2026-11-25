@@ -1,0 +1,55 @@
+/* 보고서 문서 스타일 (미리보기·PDF 공통, 항상 밝은 배경) */
+.report {
+  --r-navy: #1f2d40;
+  --r-beige: #e8e4dc;
+  --r-line: #8c8c8c;
+  background: #fff;
+  color: #000;
+  font-family: 'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  font-size: 11px;
+  line-height: 1.45;
+  width: 760px;
+  margin: 0 auto;
+  padding: 28px 30px 36px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+.report.report-pdf { box-shadow: none; padding: 0; width: 712px; }
+.report * { box-sizing: border-box; }
+.rp-title { background: var(--r-navy); color: #fff; text-align: center; font-weight: 700; font-size: 24px; padding: 14px 0; letter-spacing: 0.02em; }
+.rp-meta { text-align: right; font-size: 10px; color: #595959; margin: 4px 0 2px; }
+.rp-section { font-size: 13.5px; font-weight: 700; color: var(--r-navy); border-bottom: 2px solid var(--r-navy); padding-bottom: 4px; margin: 22px 0 8px; }
+.rp-sub { font-size: 11.5px; font-weight: 700; margin: 12px 0 5px; }
+.rp-grid { width: 100%; border-collapse: collapse; table-layout: fixed; margin: 0 0 4px; }
+.rp-grid td { border-top: 1px solid var(--r-line); border-bottom: 1px solid var(--r-line); padding: 3px 5px; height: 21px; overflow: hidden; word-break: keep-all; overflow-wrap: anywhere; }
+.rp-grid td + td { border-left: 1px solid #d9d9d9; }
+.rp-grid tr td:first-child { border-left: 1px solid var(--r-line); }
+.rp-grid tr td:last-child { border-right: 1px solid var(--r-line); }
+.rp-grid .st-head, .rp-grid .st-label { background: var(--r-beige); font-weight: 700; }
+.rp-grid .st-hl { background: #fff2cc; }
+.rp-grid .b { font-weight: 700; }
+.rp-grid .sm { font-size: 9.5px; }
+.rp-grid .al-right { text-align: right; font-variant-numeric: tabular-nums; }
+.rp-grid .al-center { text-align: center; }
+.rp-grid .al-left { text-align: left; padding-left: 7px; }
+.rp-note { font-size: 9.5px; color: #404040; margin: 4px 0 6px; }
+.rp-note > div { display: grid; grid-template-columns: 22px 1fr; }
+.rp-note .mk { text-align: right; padding-right: 6px; }
+.rp-para { margin: 2px 0 8px; font-size: 11px; }
+.rp-para .hd { font-weight: 700; font-size: 11.5px; margin-bottom: 2px; }
+.rp-para p { margin: 0 0 3px; }
+.rp-forms > div { margin-bottom: 6px; font-size: 10px; }
+.rp-forms .nm { font-weight: 700; display: grid; grid-template-columns: 22px 1fr; }
+.rp-forms .nm span { text-align: center; font-weight: 400; }
+.rp-forms .ds { padding-left: 22px; color: #262626; }
+.rp-cards { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--r-line); }
+.rp-cards .cd { text-align: center; border-left: 1px solid var(--r-line); }
+.rp-cards .cd:first-child { border-left: 0; }
+.rp-cards .t { background: var(--r-beige); font-weight: 700; padding: 4px 0; }
+.rp-cards .v { font-size: 19px; font-weight: 700; color: var(--r-navy); padding: 8px 0 2px; }
+.rp-cards .d { font-size: 9.5px; color: #595959; padding-bottom: 6px; }
+.rp-charts { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 6px 0 8px; }
+.rp-charts img { width: 100%; display: block; border: 1px solid #e5e5e5; }
+.rp-sign { margin-top: 34px; text-align: right; }
+.rp-sign .lead { text-align: center; color: #404040; margin: 0 0 18px; font-size: 10.5px; }
+.rp-sign .dt { margin: 0 0 4px; font-size: 11.5px; }
+.rp-sign .is { margin: 0; font-size: 18px; font-weight: 700; color: var(--r-navy); letter-spacing: 0.04em; }
